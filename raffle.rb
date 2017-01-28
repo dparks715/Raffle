@@ -2,13 +2,17 @@
 def raffle(ticket, winner)
 	#each loop, iterates through array, checks if each element is equal to ticket
 	#if true it will print our ticket
+	count = 0
 	winner.each do |num|
 		if num == ticket
-			puts num
-		
+			count += 1
 		end
 	end
 
-end
+	if count > 0
+		true
+	else
+		false
+	end
 
-raffle(1234,[1234])
+end
