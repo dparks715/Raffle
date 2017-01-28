@@ -14,6 +14,6 @@ def off(ticket, winner)
 	end
 	#takes the length of our array and subtracts the number of matches
 	#using this method we can provide tickets of any length
-	puts ticket_array.length - matches == 1
+	ticket_array.length - matches == 1
 
 end
