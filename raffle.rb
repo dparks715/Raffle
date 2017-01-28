@@ -1,4 +1,5 @@
 #two parameters, one for our ticket, and one for the array of winners
+=begin
 def raffle(ticket, winner)
 	#each loop, iterates through array, checks if each element is equal to ticket
 	#if true it adds 1 to our counter
@@ -15,4 +16,11 @@ def raffle(ticket, winner)
 		false
 	end
 
+end
+=end
+
+#significantly cleaner method using include?
+#checks if the winner array includes our value for ticket, returns true or false
+def raffle(ticket, winner)
+	winner.include?(ticket)
 end
