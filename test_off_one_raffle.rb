@@ -13,5 +13,10 @@ class TestArrayOffOne < Minitest::Test
 		assert_equal('Nothing off by one', results)
 	end
 
+	def test_variable_num_sizes_one_return
+		results = off_one('23456', ['23457', '23456', '1334', '2'])
+		assert_equal(['23457'], results)
+	end
+
 
 end
