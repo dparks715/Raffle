@@ -8,5 +8,10 @@ class TestArrayOffOne < Minitest::Test
 		assert_equal(['1235', '1334'], results)
 	end
 
+	def test_no_numbers_off_by_one
+		results = off_one('1234', ['1234', '3356', '0978', '3543'])
+		assert_equal('Nothing off by one', results)
+	end
+
 
 end

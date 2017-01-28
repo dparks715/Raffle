@@ -31,5 +31,9 @@ def off_one(ticket,winners)
 			off_by_one.push(num.join)
 		end
 	end
-off_by_one
+	if off_by_one.length > 0
+		off_by_one
+	else
+		'Nothing off by one'
+	end
 end
