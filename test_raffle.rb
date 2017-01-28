@@ -15,4 +15,10 @@ class TestRaffleFunction < Minitest::Test
 		assert_equal(true, results)
 	end
 
+	def test_three_num_false
+		#3 length array, no matches returns false
+		results = raffle(1234, [2345, 4657, 3427])
+		assert_equal(false, results)
+	end
+
 end
