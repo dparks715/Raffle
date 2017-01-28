@@ -21,4 +21,10 @@ class TestRaffleFunction < Minitest::Test
 		assert_equal(false, results)
 	end
 
+	def test_five_num_true
+		#checking various numbers, for the sake of testing
+		results = raffle(8675309, [2345, 24, 7, 8675309, 90000000])
+		assert_equal(true, results)
+	end
+
 end
