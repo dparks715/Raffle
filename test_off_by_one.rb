@@ -18,5 +18,10 @@ class TestStringsOffbyOne < Minitest::Test
 		assert_equal(false, results)
 	end
 
+	def test_off_one_true
+		results = off('1234','1254')
+		assert_equal(true, results)
+	end
+
 
 end
