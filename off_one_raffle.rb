@@ -26,9 +26,9 @@ def off_one(ticket,winners)
 			count += 1
 		end
 		#if our num length minus matches = 1, we know its off by one
-		#so we push it into the array
+		#so we rejoin it and push it into the array
 		if num.length - matches == 1
-			off_by_one << num
+			off_by_one.push(num.join)
 		end
 	end
 off_by_one
